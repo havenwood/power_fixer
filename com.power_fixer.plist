@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Program</key>
+    <string>/usr/local/bin/power_fixer</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/power_fixer</string>
+    </array>
+    <key>Label</key>
+    <string>com.power_fixer</string>
+    <key>UserName</key>
+    <string>root</string>
+    <key>GroupName</key>
+    <string>daemon</string>
+    <key>InitGroups</key>
+    <true/>
+    <key>OnDemand</key>
+    <false/>
+    <key>ServiceIPC</key>
+    <true/>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>Umask</key>
+    <integer>420</integer>
+    <key>ExitTimeOut</key>
+    <integer>5</integer>
+    <key>Debug</key>
+    <false/>
+    <key>WaitForDebugger</key>
+    <false/>
+    <key>Disabled</key>
+    <false/>
+</dict>
+</plist>
