@@ -193,7 +193,7 @@ static pid_t get_process_pid(char *name, pid_t last_pid)
     pid_t pid = 0;
     if( GetBSDProcessList(&result,&count) == 0 )
     {
-        for (int i = 0; i < count; i++)
+        for (unsigned int i = 0; i < count; i++)
         {
             kinfo_proc *proc = &result[i];
             if (strcmp(name, proc->kp_proc.p_comm) == 0) {
@@ -357,7 +357,7 @@ static uint64_t find_patch_place()
     uint32_t found_count = 0;
     uint8_t *patch_place = 0;
     find_binary_pattern("\xF2\x0F\x10\x05", 4, &matches, &count, 0);
-    for (int i = 0; i < count; i++)
+    for (unsigned int i = 0; i < count; i++)
     {
         if (get_relative_double(matches[i]+4) == 1.5)
         {
