@@ -1,6 +1,6 @@
 SRC_DIR		= power_fixer
 BUILD_DIR	= build
-PREFIX		= /usr/local/
+PREFIX		= /usr/local
 
 all: $(BUILD_DIR)/power_fixer
 
